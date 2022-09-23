@@ -31,7 +31,7 @@ async def on_ready():
     )
     members = '\n - '.join([member.name for member in guild.members])
     print(f'Guild Members:\n - {members}')
-    print('I can understand only 'hi' and 'i miss you')
+    print("I can understand only 'hi' and 'i miss you")
 
 
 # !!!!!`
