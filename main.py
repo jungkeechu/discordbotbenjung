@@ -5,8 +5,8 @@ import discord
 
 
 # you need these 2 stsatemtn only for PC app
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 
 TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
