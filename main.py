@@ -1,12 +1,5 @@
 # bot.py
-import os
-
 import discord
-from dotenv import load_dotenv
-
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
-GUILD = os.getenv('DISCORD_GUILD')
 
 # error  !!!! 
 # client = discord.Client()
@@ -18,7 +11,7 @@ client = discord.Client(intents=intents)
 @client.event
 async def on_ready():
     for guild in client.guilds:
-        if guild.name == GUILD:
+        if guild.name == "Chat-Bot-Test":
             break
 
     print(f'{client.user} has connected to the following guild:\n',
@@ -26,4 +19,4 @@ async def on_ready():
     )
 
 
-client.run(TOKEN)
+client.run("MTAxNTI3NTcyMjM5MjIwNzQwMQ.GG2dwm.oSDPhHV3fNjnnMvPf_iNH6JORp263CryIavkZw")
