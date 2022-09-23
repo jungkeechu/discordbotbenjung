@@ -19,4 +19,4 @@ async def on_ready():
     )
 
 
-client.run(TOKEN)
+client.run(DISCORD_TOKEN)
