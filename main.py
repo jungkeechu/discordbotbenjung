@@ -1,5 +1,8 @@
 # bot.py
 import discord
+import os
+
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 # error  !!!! 
 # client = discord.Client()
@@ -19,4 +22,4 @@ async def on_ready():
     )
 
 
-client.run(DISCORD_TOKEN)
+client.run(TOKEN)
